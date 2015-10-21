@@ -22,7 +22,7 @@ function spawn(genFunc) {
       });
     }
   }
-  co('next');
+  return Promise.resolve(co('next'));
 }
 
 module.exports = spawn;
